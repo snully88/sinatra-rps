@@ -13,17 +13,13 @@ get ("/rock") do
 
   comp_move = moves.sample
 
-  "
-  <h2>
-    We played rock
-  </h2>
-    
-  <h2>
-    They played + #{comp_move}
-  </h2>
+if comp_move == "rock"
+  outcome = "tied"
+elsif comp_move == "paper"
+  outcome == "lost"
+else
+  outcome = "won"
 
-  <h2>
-    We tied!
-  </h2>
-  "
+erb(:zebra)
+
 end
