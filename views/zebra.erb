@@ -6,20 +6,20 @@
 </h2>
     
 <h2>
-  They played <%= comp_move %>
+  They played <%= @comp_move %>
 </h2>
 
-<h2>
-  We <%= outcome %>
-</h2>
+<!--<h2>
+  We <%= @outcome %>
+</h2>-->
 
 <% if @outcome == "won" %>
   <h2 style="color:green">
-    we <% @outcome %>
+    we <%= @outcome %>
   </h2>
 <% elsif @outcome == "lost" %>
   <h2 style="color:red">
-    we <% @outcome %>
+    we <%= @outcome %>
   </h2>
 <% else %>
   <h2 style="color: blue">
