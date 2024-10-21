@@ -26,9 +26,8 @@ get ("/rock") do
     @outcome == "lost"
   else
     @outcome = "won"
-
-  erb(:rock_view)
   end
+  erb(:rock_view)
 end
 
 get ("/paper") do
@@ -42,9 +41,8 @@ get ("/paper") do
     @outcome == "lost"
   else
     @outcome = "won"
-
-  erb(:paper_view)
   end
+  erb(:paper_view)
 end
 
 get ("/scissors") do
@@ -58,7 +56,6 @@ get ("/scissors") do
     @outcome == "lost"
   else
     @outcome = "won"
-
-  erb(:scissors_views)
   end
+  erb(:scissors_view)
 end
